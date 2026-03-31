@@ -19,6 +19,7 @@ section {
 img {
   max-width: 100%;
   display: block;
+  height: auto;
 }
 
 .container {
@@ -50,8 +51,8 @@ body {
   margin-left: 0px;
   float: left;
   cursor: pointer;
-
 }
+
 
 .primary-navs,
 .secondary-navs {
@@ -96,11 +97,10 @@ body {
 }
 
 .primary-navs a.try-free :hover,
-.secondary-navs a.try-free :hover {
+.secondary-navs a.try-free :hover, .sub-nav a:hover {
   color: var(--hover-color);
   transition: color 0.3s ease;
 }
-
 
 
 .primary-navs a.more,
@@ -110,6 +110,38 @@ body {
 }
 
 
+.sub-nav {
+  display: flex;
+  gap: 25px;
+  padding: 15px 40px;
+  font-size: 14px;
+  font-weight: bold;
+  font-size: 14px;
+  position: relative;
+  z-index: 2000;
+  margin-top: 14px;
+  background: white;
+}
+
+
+.sub-nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  font-family: "Futura PT", "Futura", "Trebuchet MS", Arial, sans-serif;
+  font-weight: bold;
+}
+
+.sub-nav .active {
+  color: var(--more); 
+}
+
+
+.mobile-menu {
+  display: none;
+  font-family: "Futura PT", "Futura", "Trebuchet MS", Arial, sans-serif;
+  font-size: 19px;
+}
 
 
 
@@ -120,6 +152,7 @@ body {
   padding-left: 100px;
   padding-right: 100px;
   padding-top: 70px;
+  margin-top: -50px;
 }
 
 .abelton-image img {
@@ -134,7 +167,6 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
   color: rgba(255, 68, 68, 0.913);
   font-size: 110px;
   font-family: "Futura PT", "Futura", "Trebuchet MS", Arial, sans-serif;
@@ -145,7 +177,7 @@ body {
 .first-text-section {
   max-width: 700px;
   margin: 100px auto;
-  text-align: center;
+  text-align: justify;
   padding: 0 20px;
 }
 
@@ -154,7 +186,6 @@ body {
   font-size: 27px;
   font-weight: bold;
   line-height: 1.6;
-  text-align: justify;
   font-family: "Futura PT", "Futura", "Trebuchet MS", Arial, sans-serif;
 }
 
@@ -166,7 +197,6 @@ body {
 }
 
 .sub-text {
-  text-align: justify;
   font-size: 16px;
   font-family: "Futura PT", "Futura", "Trebuchet MS", Arial, sans-serif;
   font-size: 19px;
@@ -222,7 +252,7 @@ body {
 .second-text-section {
   max-width: 700px;
   margin: 100px auto;
-  text-align: center;
+  text-align: justify;
   padding: 0 18px;
   margin-bottom: 30px;
 }
@@ -232,12 +262,10 @@ body {
   font-size: 27px;
   font-weight: bold;
   line-height: 1.6;
-  text-align: justify;
   font-family: "Futura PT", "Futura", "Trebuchet MS", Arial, sans-serif;
 }
 
 .sub-text-2 {
-  text-align: justify;
   font-size: 16px;
   font-family: "Futura PT", "Futura", "Trebuchet MS", Arial, sans-serif;
   font-size: 19px;
@@ -286,7 +314,7 @@ body {
 .third-text-section {
   max-width: 700px;
   margin: 100px auto;
-  text-align: center;
+  text-align: justify;
   padding: 0 20px;
   margin-bottom: 30px;
   margin-top: auto;
@@ -297,12 +325,10 @@ body {
   font-size: 27px;
   font-weight: bold;
   line-height: 1.5;
-  text-align: justify;
   font-family: "Futura PT", "Futura", "Trebuchet MS", Arial, sans-serif;
 }
 
 .sub-text-3 {
-  text-align: justify;
   font-size: 16px;
   font-family: "Futura PT", "Futura", "Trebuchet MS", Arial, sans-serif;
   font-size: 19px;
@@ -352,7 +378,7 @@ body {
 .fourth-text-section {
   max-width: 700px;
   margin: 100px auto;
-  text-align: center;
+  text-align: justify;
   padding: 0 20px;
   margin-bottom: 30px;
   margin-top: auto;
@@ -363,13 +389,11 @@ body {
   font-size: 27px;
   font-weight: bold;
   line-height: 1.5;
-  text-align: justify;
   font-family: "Futura PT", "Futura", "Trebuchet MS", Arial, sans-serif;
   margin-top: 100px;
 }
 
 .sub-text-4 {
-  text-align: justify;
   font-size: 16px;
   font-family: "Futura PT", "Futura", "Trebuchet MS", Arial, sans-serif;
   font-size: 19px;
@@ -383,7 +407,7 @@ body {
   max-width: 1100px;
   display: block;
   margin: auto;
-  margin-top: 150px;
+  margin-top: 80px;
 }
 
 
@@ -392,7 +416,7 @@ body {
 .fifth-text-section {
   max-width: 700px;
   margin: 100px auto;
-  text-align: center;
+  text-align: justify;
   padding: 0 20px;
   margin-bottom: 30px;
   margin-top: auto;
@@ -403,13 +427,11 @@ body {
   font-size: 27px;
   font-weight: bold;
   line-height: 1.5;
-  text-align: justify;
   font-family: "Futura PT", "Futura", "Trebuchet MS", Arial, sans-serif;
   margin-top: 100px;
 }
 
 .sub-text-5 {
-  text-align: justify;
   font-size: 16px;
   font-family: "Futura PT", "Futura", "Trebuchet MS", Arial, sans-serif;
   font-size: 19px;
@@ -431,7 +453,7 @@ body {
   max-width: 800px;
   max-height: 800px;
   margin: auto;
-  margin-top: 150px;
+  margin-top: 80px;
 }
 
 
@@ -450,7 +472,7 @@ body {
 .sixth-text-section {
   max-width: 700px;
   margin: 100px auto;
-  text-align: center;
+  text-align: justify;
   padding: 0 20px;
   margin-bottom: 30px;
   margin-top: auto;
@@ -461,13 +483,11 @@ body {
   font-size: 27px;
   font-weight: bold;
   line-height: 1.5;
-  text-align: justify;
   font-family: "Futura PT", "Futura", "Trebuchet MS", Arial, sans-serif;
   margin-top: 100px;
 }
 
 .sub-text-6 {
-  text-align: justify;
   font-size: 16px;
   font-family: "Futura PT", "Futura", "Trebuchet MS", Arial, sans-serif;
   font-size: 19px;
@@ -581,7 +601,7 @@ button {
 
 .newsletter button {
   padding: 13px 25px;
-  background: #0f27ff;
+  background: var(--tryfree);
   color: white;
   border: none;
 
@@ -674,44 +694,243 @@ p {
   line-height: 30px;
 }
 
+.yellow-box,
+.green-img-grid,
+.purple-box,
+.jobs-container {
+  max-width: 100%;
+}
+
+section, div {
+  max-width: 100%;
+}
+
 
 
 @media (max-width: 768px) {
   section {
-    padding: 50px 0;
+    padding: 50px 20px;
   }
+
+  .first-text-section, .second-text-section, .third-text-section, .fourth-text-section,
+  .fifth-text-section, .sixth-text-section {
+    margin: 60px auto;
+    text-align: center;
+  
+  }
+
+  .main-text, .main-text-2, .main-text-3, .main-text-4, .main-text-5, .main-text-6 {
+    font-size: 20px;
+  }
+  
+
 
   .container {
     padding: 0 20px;
   }
 
-  .yellow-box-section, .green-box-section, .purple-box, .jobs-section, .footer {
-    display: grid;
-    grid-template-columns: 1fr;
+  .nav-container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
   }
 
-  .footer-grid {
-    grid-template-columns: 1fr;
-    gap: 25px;
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+}
+
+.primary-navs,
+.secondary-navs {
+  display: none;
+}
+
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 20px;
+  align-items: center;
+  padding: 12px 20px;
+  position: relative;
+  z-index: 1000;
+  align-items: center;
+}
+
+
+.logo {
+  width: auto;
+}
+
+.mobile-menu {
+  position: relative;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: white;
+  width: 180px;
+  display: none;
+  flex-direction: column;
+  padding: 10px 0;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.dropdown a {
+  padding: 10px 15px;
+  text-decoration: none;
+  font-family: "Futura PT", "Futura", "Trebuchet MS", Arial, sans-serif;
+  color: black;
+  display: block;
+  z-index: 1;
+}
+
+.dropdown a:hover {
+  background: #f3f3f3;
+}
+
+.mobile-menu:hover .dropdown,
+.mobile-menu:focus-within .dropdown {
+  display: flex;
+}
+
+.mobile-menu {
+  display: block;
+  
+}
+
+
+
+.primary-navs,
+.secondary-navs {
+  display: none;
+}
+
+
+  .primary-navs,
+  .secondary-navs {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .primary-navs {
+    margin-right: 0;
+  }
+
+  .secondary-navs {
+    margin-left: 0;
+  }
+
+.sub-nav {
+  flex-direction: row;
+  gap: 15px;
+  padding: 15px 20px;
+  background: white;
+  margin-bottom: 40px;
+}
+
+  .sub-nav {
+    position: relative;
+    z-index: 250;
+  }
+
+
+  .abelton-image {
+    padding: 20px;
+    z-index: 1;
+  }
+
+  .abelton-image h1 {
+    font-size: 80px;
+    text-align: center;
+  }
+
+
+.footer {
+  padding: 40px 20px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
+
+
+
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.newsletter input {
+  width: 60%;
+  padding: 8px;
+}
+
+
+.newsletter button {
+  background: var(--tryfree);
+  color: white;
+  border: none;
+  font-size: 15px;
+  font-family: "Futura PT", "Futura", "Trebuchet MS", Arial, sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.newsletter button {
+  width: 60%;
+  padding: 12px;
+}
+
+.footer-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+
+.purple-box {
+   flex-direction: column;
+   gap: 20px;
+    padding: 40px 20px;
+    max-width: 100%;
   }
 
   .green-img-grid {
+    padding: 0 20px;
     grid-template-columns: 1fr;
-    >div {
-      width: 100%;
-    }
+     gap: 20px;
   }
 
   .green-img-grid img {
-    position: static;
-    margin: 20px auto;    
+    width: 100%;
     height: auto;
   }
 
- .first-text-section, .second-text-section, .third-text-section, .fourth-text-section,
-  .fifth-text-section, .sixth-text-section {
-    padding: 0 15px;
+  .green-box {
+  position: static;
+  width: 100%;
+  height: 200px;
   }
+
+  .img-big {
+    grid-column: 1;
+    transform: none;
+    margin-top: 0;
+  }
+
 
   .video-wrapper {
     padding: 0 15px;
@@ -748,13 +967,28 @@ p {
     font-size: 16px;
   }
 
+.green-box,
+.background {
+  position: static;
+  width: 100%;
+}
+
+
   .yellow-box {
     grid-template-columns: 1fr;
+    padding: 0;
+    gap: 20px;
   }
 
+  .first-img, .second-img {
+    width: 100%;
+    margin: 0 auto;
+  } 
 
-  .nav-container {
-    display: none;
+  .background {
+    position: static;
+    width: 100%;
+    height: 200px;
   }
 
   .primary-navs,
